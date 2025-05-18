@@ -7,8 +7,8 @@ import com.example.tap_tap.domain.model.Tap
 
 import com.example.tap_tap.domain.repository.TapRepository
 
-class TapRepositoryImpl: TapRepository {
-    private var api = TapDataSource
+class TapRepositoryImpl( private var api : TapDataSource ): TapRepository {
+
 
 
     override fun increment() {

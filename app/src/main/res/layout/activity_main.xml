@@ -5,9 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.activity.MainActivity">
+    tools:context=".presentation.activity.TapActivity"
+    android:background="@color/white">
 
     <TextView
+        android:id="@+id/tv_tap"
+        android:textSize="36sp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -15,5 +19,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/green"
+        android:textSize="30sp"
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_increment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_tap"/>
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="@color/red"
+        android:textSize="30sp"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_decrement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_tap"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@ package com.example.tap_tap.data.datasource
 
 import com.example.tap_tap.data.model.TapDto
 
-object TapDataSource {
+class TapDataSource {
 
 
     private var tap = 0
